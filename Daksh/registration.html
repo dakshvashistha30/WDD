@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    
+</head>
+<body>
+    <h1>Student Registration form</h1>
+    <nav>
+        <a href="index.html">Home </a>|
+        <a href="courses.html">Courses </a>|
+        <a href="gallery.html">Gallery </a>|
+        <a href="registration.html">Registration </a>|
+</nav>
+    <hr>
+    <form action="#" method="post">
+        <label for="fullname">Full name: </label>
+        <input type="text" id="Full name" name="Full name" placeholder="Enter your Full Name" required>
+        <br><br>
+        <label for="email">Email Address</label>
+        <input type="text" id="email " name="email" placeholder="address@gmail.com" required>
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" minlength="6" maxlength="20" required>
+        <br><br>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digitnumber" required>
+        <br><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob"required>
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other" required>
+        <label for="other">Other</label>
+        <br><br>
+        <label for="course">Course:</label>
+        <select name="course" id="course" required>
+            
+            <option value="">--Select Course</option>
+            <option>BA</option>
+            <option>BCA</option>
+            <option>B.Sc</option>
+            <option>BTech-CSE</option>
+            <option>BTech-CSE(DS)</option>
+            <option>BTech-DS</option>
+            <option>MA</option>
+            <option>MBA</option>
+            <option>M.Tech</option>
+         </select>
+         <br><br>
+         <label>Skills: </label>
+         <input type="checkbox"  value="HTML">
+         <label for="html">HTML</label>
+         <input type="checkbox" id="Java" name="skills" value="JAVA">
+         <label for="Java">JAVA</label>
+         <input type="checkbox" id="C++" name="skills" value="C++">
+         <label for="c++">C++</label>
+         <input type="checkbox" id="Python" name="skills" value="PYTHON">
+         <label for="python">Python</label>
+         <input type="checkbox" id="C" name="skills" value="C">
+         <label for="C">C</label>
+         <input type="checkbox" id="autocad" name="skills" value="AUTOCAD">
+         <label for="autocad">Autocad</label>
+         <br><br>
+         <label for="address">Address: </label>
+         <textarea id="address" name="address" rows="4" cols="40" placeholder="Enter your address"></textarea>
+         <br><br>
+         <label for="photo">Upload Photo:</label>
+         <input type="file" id="photo" name="photo" placeholder="image/*">
+         <br><br>
+         <label for="website">Personal Website:</label>
+         <input type="url" id="website" name="website" placeholder="https://example.com">
+         <br><br>
+         <label for="favcolor" >Favorite Color: </label>
+         <input type="color" id="favcolor" name="favcolor">
+         <br><br>
+         <label for="admission" >Admission: </label>
+         <input type="month" id="admission" name="admission">
+         <br><br>
+         <label for="studytime" >Prefered Time to Study </label>
+         <input type="time" id="studytime" name="studytime">
+         <br><br>
+         <input type="checkbox" id="agree" required>
+         <label for="agree">I agree to the trems and Conditions</label>
+         <br><br>
+         <input type="submit" value="Register">
+         <input type="Reset" value="Clear Form">
+    </form>
+</body>
+</html>
