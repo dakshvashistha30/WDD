@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9fbff;
+    color: #222;
+}
+
+
+
+nav {
+    background-color: #000000;
+    color: rgb(186, 12, 230);
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: rgb(149, 21, 223);
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+
+
+
+
+.hero {
+    background-color: #000000;
+    color: rgb(240, 236, 229);
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: rgb(22, 20, 20);
+    color: #0a0b0e;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+.section {
+    width: 80%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.section h2,
+.contact h2 {
+    font-size: 30px;
+}
+
+.section > p {
+    color: #070606;
+}
+
+
+.boxes {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.box {
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    width: 33%;
+    border-radius: 10px;
+}
+
+.box p {
+    line-height: 1.5;
+}
+
+.blue {
+    background-color: #3b82f6;
+}
+
+.purple {
+    background-color: #8d16b1;
+}
+
+.green {
+    background-color: #800be0;
+}
+
+
+
+.contact {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    margin: 60px auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contact p {
+    color: #000000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 30px auto;
+}
+
+input,
+textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #a11cdf;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #202938;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+}
