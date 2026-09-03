@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <h2>Registration Form</h2>
+
+    <label>Enter Name:</label>
+    <input type="text" id="name" placeholder="Enter Name">
+    <br><br>
+
+    <label>Enter Email:</label>
+    <input type="email" id="email" placeholder="Enter Email">
+    <br><br>
+
+    <label>Enter Password:</label>
+    <input type="password" id="password" placeholder="Enter Password">
+    <br><br>
+
+    <label>Enter Mobile Number:</label>
+    <input type="number" id="mobile" placeholder="Enter Mobile Number">
+    <br><br>
+
+    <button onclick="register()">Register</button>
+
+    <p id="result"></p>
+
+    <script>
+        function register() {
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let mobile = document.getElementById("mobile").value;
+
+            if (name == "" || email == "" || password == "" || mobile == "") {
+                document.getElementById("result").innerHTML =
+                    "Please fill all the fields.";
+            }
+            else {
+                document.getElementById("result").innerHTML =
+                    "Registration Successful!";
+            }
+        }
+    </script>
+
+</body>
+</html>
