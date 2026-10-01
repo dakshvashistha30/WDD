@@ -2,79 +2,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Types Demonstration</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body{
-            background-color: #f4f6f8;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-
-        .internal_section {
-            background-color: white;
-            width: 80%;
-            margin: 30px auto;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgpa(0,0,0,0.1);            
-        }
-
-        .internal_section h2{
-            color: #8e44ad;
-            text-align: center;
-        }
-
-        .internal_section p{
-            font-size: 18px;
-            line-height: 1.6;
-            color: #444;
-        }
-
-        .internal_box {
-            background-color: #e8daef;
-            padding: 20px;
-            border-left: 6px solid #8e44ad;
-            margin-top: 15px;
-        }
-    </style>
+    <title>Guessing Game!</title>
 </head>
 <body>
-    
-    <header style="
-        background-color: #1f4e79;
-        color: white;
-        text-align: center;
-        padding: 30px;
-    ">
-        <h1 style="font-size: 40px;margin: 0;">
-            CSS Types Demonstration
-        </h1>
+    <h1>Number Guessing Game</h1>
+    <p>Guess a number between 1 and 10</p> 
+    <input type="number" id="guess" placeholder="Enter your guess"> 
+    <button onclick="checkGuess()">Guess</button> <p id="result"></p>
+    <p id="result"></p>
+    <script>
+    let random = Math.floor(Math.random() * 10) + 1;
+    function checkGuess(){
+        let userGuess = Number(document.getElementById("guess").value);
 
-        <p style="font-size: 18px;">
-            Inline, Internal and External CSS
-        </p>
-    </header>
-    <section class="internal_section">
-        <h2>2. Internal CSS</h2>
-        <p>
-            The Styling of this section is written inside the &lt;style&gt; tag in the HTML document. 
-        </p>
-        <div class="internal_box">
-            This box is styled using Internal CSS.
-        </div>
-    </section>
+        if (userGuess == random)
+            {document.getElementById("result").innerHTML = "Correct! You guessed the number"}
+            if (userGuess < random)
+            {document.getElementById("result").innerHTML = "Too Less ! You guessed the wrong number"}
+            if (userGuess > random)
+            {document.getElementById("result").innerHTML = "Too High! You guessed the wrong number"}
+            }
 
-    <section class="external_section">
-        <h2>3. External CSS</h2>
-        <p>
-            the styling of this section is defined in an External CSS file.
-        </p>
-        <div class="external_box">
-            This box is styled using External CSS.
-        </div>
-    </section>
-
-    </section>
+    </script>
 </body>
 </html>
